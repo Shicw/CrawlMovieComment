@@ -53,7 +53,7 @@ def init():
     movie = list['movies']['list']
     print ("共搜索出" + str(list['movies']['total']) + "部电影")
     for key, v in enumerate(movie):
-        desc = '[' + str(key) + ']' + v['nm'] + '|' + v['cat']
+        desc = '[' + str(key) + ']' + '|' + str(v['id']) + '|' + v['nm'] + '|' + v['cat']
         if v.__contains__('star'):
             desc += '|' + v['star']
         print (desc)
